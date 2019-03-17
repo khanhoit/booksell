@@ -1,0 +1,33 @@
+extends layout_header
+
+block content
+    .container.d-flex.vh-100.align-items-center
+        #signup.w-50.m-auto.w-50.m-auto
+            h2.text-center(href='#', onclick="return false") Đăng Ký
+            form(action="" method="POST" )
+                .form-group.row
+                    input#Username.form-control(type='text' name="name" placeholder="Username" maxlength="34" required autofocus )
+                .form-group.row
+                    input#userEmail.form-control(type='text' name="email" placeholder="Email"  maxlength="34"  required)
+                .form-group.row
+                    input#Phone.form-control(type='text' name="phone" placeholder="Phone"  maxlength="15" pattern="[0-9]{9,16}"  required)
+                .form-group.row
+                    input#inputPassword.form-control(type='password' name="password" placeholder="Password" maxlength="8" required)
+                .form-group.row
+                    input#conFirmInputPassword.form-control(type='password' name="cfPassword" placeholder="Confirm password" maxlength="8" required)
+                .form-group.row
+                    button.btn.btn-primary.btn-lg.btn-block Đăng Ký  
+                hr
+                div.d-flex.justify-content-between
+                    p Đăng ký bằng
+                    a(href='./login' ) Đăng Nhập
+                .form-group.d-flex
+                    div.mr-1
+                        button.btn.btn-primary facebook
+                    div.mr-1
+                        button.btn.btn-primary facebook
+                    div.mr-1
+                        button.btn.btn-primary facebook
+                    
+
+

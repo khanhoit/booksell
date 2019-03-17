@@ -1,0 +1,41 @@
+doctype html
+html
+  head
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet",href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css",integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T",crossorigin="anonymous")
+  body
+    //- h1 #{check}
+    
+    .container
+      nav.navbar.navbar-expand-lg.navbar-light.bg-light.sticky-top
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo03', aria-controls='navbarTogglerDemo03', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        #navbarTogglerDemo03.collapse.navbar-collapse.justify-content-between
+          a.navbar-brand(href='/') Booksell
+          div
+            form(action="" method="GET")
+            input.form-control.w-md-50(type='search', placeholder='tìm kiếm ...', aria-label='Search')
+          ul.navbar-nav
+            li.nav-item.d-flex(style=`display:${check==true?"none":"relative"} !important`)
+              a.nav-link.pr-0(href='/login') Đăng nhập
+              span.border-after
+              a.nav-link.pl-0(href='/signup') Đăng ký
+            li.nav-item.position-relative(style=`display:${check==true?"relative":"none"} !important`)
+              a.nav-link(href="#") thông báo
+              ul.position-absolute.bg-white.list-unstyled.round(style="display:none;right:0px; z-index:999;min-width:250px;box-shadow:0px 2px 7px 0px #d0d0d0;")
+                li
+                  a.nav-link.text-center(href="#") Thông báo
+                li
+                  a.nav-link.text-center(href="#") Trang cá nhân
+                li
+                  a.nav-link.text-center(href="#") Lịch sử mua
+                li
+                  a.nav-link.text-center(href="#") logout
+            li.nav-item.position-relative(style=`display:${check==true?"relative":"none"} !important`)
+              a.nav-link.text-primary(href="users") K 
+            li.nav-item
+              a.nav-link(href='#') cart(0)
+    block content
+    script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js",integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo",crossorigin="anonymous")
+    script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js",integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1",crossorigin="anonymous")
+    script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js",integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM",crossorigin="anonymous")

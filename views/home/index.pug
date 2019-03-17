@@ -1,0 +1,74 @@
+extends ../layout_header
+
+block content
+  .container
+    // carousel
+    br
+    #carouselExampleIndicators.carousel.slide(data-ride='carousel')
+      ol.carousel-indicators
+        li.active(data-target='#carouselExampleIndicators', data-slide-to='0')
+        li(data-target='#carouselExampleIndicators', data-slide-to='1')
+        li(data-target='#carouselExampleIndicators', data-slide-to='2')
+      .carousel-inner
+        .carousel-item.active
+          img.d-block.w-100(src='https://picsum.photos/1200/400?random=1', alt='...')
+        .carousel-item
+          img.d-block.w-100(src='https://picsum.photos/1200/400?random=2', alt='...')
+        .carousel-item
+          img.d-block.w-100(src='https://picsum.photos/1200/400?random=3', alt='...')
+      a.carousel-control-prev(href='#carouselExampleIndicators', role='button', data-slide='prev')
+        span.carousel-control-prev-icon(aria-hidden='true')
+        span.sr-only Previous
+      a.carousel-control-next(href='#carouselExampleIndicators', role='button', data-slide='next')
+        span.carousel-control-next-icon(aria-hidden='true')
+        span.sr-only Next
+    
+    // items
+    br
+    .row
+      .col-md-8.col-sm-12.border.border-primary 
+        .best-sells
+          h4
+            a(href="#") Sản phẩm bán chạy
+          .row
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+        .all-items
+          h4
+            a(href="#") sản phẩm mới
+          .row
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+            .col-sm-12.col-md-4
+              a(href="#")
+                <img src="https://picsum.photos/600/400?random=1" alt="..." class="img-thumbnail">
+      .col-md-4.col-sm-12.border.border-primary.order-sm-first.order-md-last  two of three columns

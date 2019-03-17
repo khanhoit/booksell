@@ -1,8 +1,23 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
 }
+
+input[type=search]{
+  font-size: 0.8rem !important;
+  width: auto;
+}
+
+.border-after{
+  height: 23px;
+  width: 2px;
+  transform: rotate(16deg);
+  background: gray;
+  margin: 5px;
+  position: relative;
+  bottom: -1px;
+}
+

@@ -1,0 +1,36 @@
+extends layout_header
+
+block content
+    //- h1 #{user}
+    .container.d-flex.vh-100.align-items-center
+        #login.w-50.m-auto.w-50.m-auto
+            h2.text-center Đăng nhập
+            form(action="" method="POST")
+                input(name="hash" hidden)
+                .form-group.row
+                    label.col-sm-2.col-form-label.p-0(for='userEmail') Email
+                    .col-sm-10
+                    input#userEmail.form-control(type='text', name="email"  maxlength="34" value="" pattern="/\A[a-z0-9\+\-_\.]+@[a-z\d\-.]+\.[a-z]+\z/i" required autofocus )
+                .form-group.row
+                    label.col-sm-2.col-form-label.p-0(for='inputPassword') Password
+                    .col-sm-10
+                    input#inputPassword.form-control(type='password' name="password" value="" maxlength="8" required)
+                .form-group.d-flex.justify-content-between
+                    div.d-flex
+                        input.d-flex.align-items-center#rememberPassword(style='width:24px;height:24px',type="checkbox",aria-label="Checkbox for following text input" name="rememberPassword" value ="true")
+                        label.p-0.d-flex.align-items-center.m-0(for='rememberPassword') Nhớ password
+                    div
+                        a(href="#") Quên mật khẩu?
+                .form-group.row
+                    button.btn.btn-primary.btn-lg.btn-block Đăng Nhập  
+                hr
+                div.d-flex.justify-content-between
+                    p Đăng nhập bằng
+                    a(href='./signup') Đăng ký
+                .form-group.d-flex
+                    div.mr-1
+                        button.btn.btn-primary facebook
+                    div.mr-1
+                        button.btn.btn-primary facebook
+                    div.mr-1
+                        button.btn.btn-primary facebook
